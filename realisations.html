@@ -237,6 +237,8 @@ figure{margin:0}
 .wide-photo img{object-position:75% 50%}
 .contact h2{overflow-wrap:break-word}
 
+.card .thumb.vid{padding:8% 18%;background:var(--night)}
+.card .thumb.vid video{height:100%;width:auto;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:#000}
 </style>
 <title>Réalisations · Léo Blondel</title><meta name="description" content="Toutes les réalisations de Léo Blondel.">
 </head><body>
@@ -244,7 +246,7 @@ figure{margin:0}
 <main>
 <header class="page-hero"><div class="wrap">
 <h1>Réalisations</h1>
-<p class="lede">Toutes mes productions au même endroit. Choisissez un type, puis cliquez sur une réalisation pour voir le contexte et les résultats.</p>
+<p class="lede">Toutes mes productions au même endroit. Choisissez un type. Les vidéos se lancent directement ici, les posts renvoient vers leur contexte.</p>
 <ul class="filters" aria-label="Filtrer par type"><li><button type="button" data-filter="tout" aria-pressed="true">Tout</button></li><li><button type="button" data-filter="reactif" aria-pressed="false">Réactif</button></li><li><button type="button" data-filter="post" aria-pressed="false">Posts</button></li><li><button type="button" data-filter="video" aria-pressed="false">Vidéo</button></li></ul>
 </div></header>
 <section><div class="wrap"><div class="grid">
@@ -255,12 +257,11 @@ figure{margin:0}
 <a class="card" data-type="reactif" href="index.html#foot"><div class="thumb"><img src="x-strasbourg.jpg" alt="" loading="lazy"></div><div class="body"><h2>Post coach de Strasbourg</h2><div class="meta"><span>Veille, rédaction</span><span class="metric">126 000 vues</span></div></div></a>
 <a class="card" data-type="post" href="index.html#foot"><div class="thumb"><img src="x-ligue1.jpg" alt="" loading="lazy"></div><div class="body"><h2>Mème Ligue 1</h2><div class="meta"><span>Création</span><span class="metric">31 000 vues</span></div></div></a>
 <a class="card" data-type="post" href="index.html#facebook"><div class="thumb"><img src="facebook-fete-des-peres.jpg" alt="" loading="lazy"></div><div class="body"><h2>Post fête des pères</h2><div class="meta"><span>Création</span><span class="metric">1 300 réactions</span></div></div></a>
-<a class="card" data-type="video" href="index.html#videos"><div class="thumb"><img src="pov-journee-poster.jpg" alt="" loading="lazy"></div><div class="body"><h2>La journée d'un équipier</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></a>
-<a class="card" data-type="video" href="index.html#videos"><div class="thumb"><img src="pov-preparation-poster.jpg" alt="" loading="lazy"></div><div class="body"><h2>Préparation en cuisine</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></a>
-<a class="card" data-type="video" href="index.html#videos"><div class="thumb"><img src="pov-frites-poster.jpg" alt="" loading="lazy"></div><div class="body"><h2>Le poste frites</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></a>
-<a class="card" data-type="video" href="index.html#videos"><div class="thumb"><img src="affiches-poster.jpg" alt="" loading="lazy"></div><div class="body"><h2>Affiches produits</h2><div class="meta"><span>Idée, montage</span></div></div></a>
-<a class="card" data-type="video" href="index.html#analyse"><div class="thumb"><img src="decryptage-kitkat-poster.jpg" alt="" loading="lazy"></div><div class="body"><h2>Décryptage KitKat face caméra</h2><div class="meta"><span>Analyse, écriture, voix, montage</span></div></div></a>
-<a class="card" data-type="video" href="index.html#autres"><div class="thumb text">Montages vidéo personnels</div><div class="body"><h2>Montages vidéo personnels</h2><div class="meta"><span>Montage</span></div></div></a>
+<div class="card" data-type="video"><div class="thumb vid"><video controls playsinline preload="none" poster="pov-journee-poster.jpg" aria-label="La journée d'un équipier"><source src="pov-journee.mp4" type="video/mp4"></video></div><div class="body"><h2>La journée d'un équipier</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></div>
+<div class="card" data-type="video"><div class="thumb vid"><video controls playsinline preload="none" poster="pov-preparation-poster.jpg" aria-label="Préparation en cuisine"><source src="pov-preparation.mp4" type="video/mp4"></video></div><div class="body"><h2>Préparation en cuisine</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></div>
+<div class="card" data-type="video"><div class="thumb vid"><video controls playsinline preload="none" poster="pov-frites-poster.jpg" aria-label="Le poste frites"><source src="pov-frites.mp4" type="video/mp4"></video></div><div class="body"><h2>Le poste frites</h2><div class="meta"><span>Lunettes Meta, idée, montage, son</span></div></div></div>
+<div class="card" data-type="video"><div class="thumb vid"><video controls playsinline preload="none" poster="affiches-poster.jpg" aria-label="Affiches produits"><source src="affiches.mp4" type="video/mp4"></video></div><div class="body"><h2>Affiches produits</h2><div class="meta"><span>Idée, montage</span></div></div></div>
+<div class="card" data-type="video"><div class="thumb vid"><video controls playsinline preload="none" poster="decryptage-kitkat-poster.jpg" aria-label="Décryptage KitKat face caméra"><source src="decryptage-kitkat.mp4" type="video/mp4"></video></div><div class="body"><h2>Décryptage KitKat face caméra</h2><div class="meta"><span>Analyse, écriture, voix, montage</span></div></div></div>
 </div></div></section>
 </main>
 <section class="contact" id="contact">
