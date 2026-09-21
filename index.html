@@ -1,1 +1,281 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Léo Blondel · Contenu et réseaux sociaux</title>
+<meta name="description" content="Portfolio de Léo Blondel : contenu et réseaux sociaux pour McDonald's France chez BBDO Paris, projets e-commerce sur TikTok.">
+<meta property="og:title" content="Léo Blondel · Contenu et réseaux sociaux">
+<meta property="og:description" content="Contenu pour McDonald's France chez BBDO Paris, projets e-commerce sur TikTok.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F1F2F4;
+  --surface:#FFFFFF;
+  --ink:#1A1F2B;
+  --muted:#586071;
+  --line:#D6D9DF;
+  --like:#E8254A;
+  --radius-media:14px;
+  --font:"Bricolage Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.55;font-optical-sizing:auto}
+img,video{display:block;max-width:100%;height:auto}
+a{color:inherit}
+a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid var(--like);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+p{margin:0 0 1em;max-width:36em}
+
+/* Hero */
+.hero{padding:clamp(56px,10vw,120px) 0 clamp(40px,6vw,64px);border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(3.2rem,11vw,7.5rem);line-height:.92;letter-spacing:-.035em;font-weight:800;margin:0 0 .35em}
+.hero .role{font-size:clamp(1.3rem,2.6vw,1.75rem);font-weight:600;margin:0 0 1rem}
+.hero .pitch{font-size:1.15rem;color:var(--muted);max-width:32em}
+.btn{display:inline-block;margin-top:.75rem;padding:.8em 1.4em;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;border-radius:999px}
+.btn:hover{background:#2D3446}
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(40px,6vw,64px);border-top:1px solid var(--line)}
+.results div{padding:1.1rem 1.25rem 0 0}
+.results div+div{padding-left:1.25rem;border-left:1px solid var(--line)}
+.results strong{display:block;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.results span{color:var(--muted);font-size:.95rem}
+
+/* Sections */
+section{padding:clamp(56px,8vw,96px) 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(2rem,5vw,3.25rem);line-height:1.02;letter-spacing:-.025em;font-weight:800;margin:0 0 .5rem}
+.lede{color:var(--muted);font-size:1.1rem;margin-bottom:0}
+h3{font-size:1.45rem;line-height:1.15;letter-spacing:-.01em;font-weight:700;margin:0 0 .6rem}
+.block{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:start;margin-top:clamp(48px,7vw,80px)}
+.block.single{grid-template-columns:minmax(0,1fr)}
+.stat{margin:1.25rem 0 0;padding-top:1rem;border-top:1px solid var(--line);max-width:36em}
+.stat strong{display:block;font-size:2rem;line-height:1.05;font-weight:800;color:var(--like);letter-spacing:-.02em}
+.stat span{color:var(--muted)}
+.note{color:var(--muted);font-size:.95rem}
+figure{margin:0}
+figcaption{color:var(--muted);font-size:.9rem;margin-top:.5rem}
+.shot{border-radius:var(--radius-media);overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fb{max-width:62%}
+.draft{max-width:360px}
+@media (max-width:560px){.fb{max-width:100%}}
+.tweets{margin-top:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:start}
+.tweets figcaption{font-size:.95rem;color:var(--ink);margin-top:.75rem}
+.num{display:block;margin-top:.6rem;font-size:1.5rem;line-height:1.1;font-weight:800;color:var(--like);letter-spacing:-.02em}
+@media (max-width:980px){.tweets{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.tweets{grid-template-columns:minmax(0,1fr)}}
+.cases{display:grid;gap:clamp(28px,4vw,44px)}
+
+/* Video strip: the one bold element */
+.strip{margin-top:clamp(28px,4vw,40px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.phone{background:#000;border-radius:22px;padding:6px;box-shadow:0 1px 0 var(--line)}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:17px;background:#000}
+.solo{max-width:300px}
+
+.ecom .block{margin-top:clamp(36px,5vw,56px)}
+.list-plain{margin:0;padding:0;list-style:none;display:grid;gap:1.25rem;max-width:36em}
+.list-plain li{padding-top:1.25rem;border-top:1px solid var(--line)}
+.list-plain li:first-child{padding-top:0;border-top:0}
+
+.contact{border-bottom:0;padding-bottom:clamp(64px,10vw,120px)}
+.contact h2{max-width:14em}
+.mail{font-size:clamp(1.25rem,3.4vw,2rem);font-weight:700;word-break:break-word}
+footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+
+@media (max-width:820px){
+  .block{grid-template-columns:minmax(0,1fr)}
+  .strip{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:62%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:calc(-1*clamp(20px,5vw,48px))}
+  .strip .phone{scroll-snap-align:start}
+}
+@media (max-width:560px){
+  .results{grid-template-columns:1fr}
+  .results div,.results div+div{padding:1rem 0;border-left:0;border-bottom:1px solid var(--line)}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Léo Blondel</h1>
+    <p class="role">Contenu et réseaux sociaux</p>
+    <p class="pitch">Étudiant en BUT Techniques de commercialisation à Colmar, en recherche d'alternance. J'ai créé du contenu pour McDonald's France chez BBDO Paris et lancé deux boutiques en ligne.</p>
+    <a class="btn" href="mailto:leo.blondel68@gmail.com">M'écrire</a>
+
+    <div class="results">
+      <div><strong>421 500</strong><span>likes sur un commentaire de marque</span></div>
+      <div><strong>4,7 millions</strong><span>de vues sur trois vidéos TikTok</span></div>
+      <div><strong>52 000</strong><span>likes sur un post Instagram</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="bbdo">
+  <div class="wrap">
+    <h2>BBDO Paris × McDonald's France</h2>
+    <p class="lede">Stage dans l'équipe social media, de fin mars à début juin 2026. J'ai conçu et réalisé les contenus présentés ici. L'équipe les validait avant publication.</p>
+
+    <!-- Veille et réactivité -->
+    <div class="block">
+      <div>
+        <h3>Veille et réactivité</h3>
+        <p>Chaque jour, je surveillais TikTok, X et l'actualité pour repérer ce qui touchait McDonald's : une vidéo à commenter, une tendance à reprendre, un événement sur lequel rebondir. Je proposais ensuite la réponse de la marque.</p>
+        <p>Pour réagir juste, il faut partager les références culturelles du public de la marque. C'est ce qui permet de créer un lien avec lui.</p>
+        <p>Une de mes réponses sous une vidéo TikTok est devenue le commentaire le plus liké de l'histoire du compte McDonald's France.</p>
+        <p class="stat"><strong>421 500 likes</strong><span>sur un seul commentaire</span></p>
+      </div>
+      <figure>
+        <img class="shot" src="images/commentaire-tiktok.jpg" width="827" height="800" alt="Commentaire de McDonald's France sous une vidéo TikTok, 421 500 likes" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="block single">
+      <div>
+        <h3>Rebondir sur l'actualité et le foot</h3>
+        <p>McDonald's est partenaire titre de la Ligue 1 : le foot fait partie des références de sa communauté, et j'ai souvent joué avec.</p>
+      </div>
+      <div class="tweets">
+        <figure>
+          <img class="shot" src="images/reactif-yamal.jpg" width="1000" height="997" alt="Post X de McDonald's France en réaction aux photos de Lamine Yamal" loading="lazy">
+          <figcaption>Lamine Yamal fête son titre de meilleur jeune sportif de l'année en jet privé, un McDo sur la table. Ma réponse dans la foulée : « force au livreur ».<strong class="num">278 000 vues</strong>sans publicité payante</figcaption>
+        </figure>
+        <figure>
+          <img class="shot" src="images/x-strasbourg.jpg" width="900" height="786" alt="Post X de McDonald's France : il a commandé une boîte de 4" loading="lazy">
+          <figcaption>Le coach de Strasbourg fête la qualification au McDo avec les supporters. Ma réponse : « il a commandé une boîte de 4 ».<strong class="num">126 000 vues</strong>sur X</figcaption>
+        </figure>
+        <figure>
+          <img class="shot" src="images/x-ligue1.jpg" width="900" height="945" alt="Mème de McDonald's France pour les deux ans du partenariat Ligue 1" loading="lazy">
+          <figcaption>Les deux ans du partenariat Ligue 1 McDonald's, en mème : « 2 ans qu'on se régale ».<strong class="num">31 000 vues</strong>sur X</figcaption>
+        </figure>
+        <figure>
+          <img class="shot" src="images/x-kitkat.jpg" width="900" height="905" alt="Post X de McDonald's France : il nous reste du KitKat, si jamais" loading="lazy">
+          <figcaption>Le jour du vol d'un camion de KitKat : « il nous reste du KitKat, si jamais. » Post co-réalisé avec l'équipe.<strong class="num">294 000 vues</strong>et 9 000 likes sur X</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Posts -->
+    <div class="block">
+      <div>
+        <h3>Posts Instagram et Facebook</h3>
+        <div class="cases">
+          <div>
+            <p>Reprise d'une tendance venue des États-Unis : un communiqué officiel au ton grave, puis la chute, un chaton en tenue d'équipier. Le sérieux du début crée le hook, l'humour de la chute fait réagir.</p>
+            <p class="stat"><strong>52 000 likes</strong><span>sur Instagram, sans boost</span></p>
+          </div>
+          <div>
+            <p>Pour la fête des pères, une blague sur la calvitie portée par un pain de burger dégarni.</p>
+            <p class="stat"><strong>1 300 réactions</strong><span>sur Facebook</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="cases">
+        <div class="pair">
+          <img class="shot" src="images/insta-communique.jpg" width="800" height="998" alt="Carrousel Instagram, premier visuel : communiqué à propos d'un post supprimé" loading="lazy">
+          <img class="shot" src="images/insta-chaton.jpg" width="800" height="995" alt="Carrousel Instagram, second visuel : chaton en casquette McDonald's" loading="lazy">
+        </div>
+        <img class="shot fb" src="images/facebook-fete-des-peres.jpg" width="900" height="885" alt="Post Facebook « bonne fête papa » avec un pain de burger" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Vidéo -->
+    <div class="block single">
+      <div>
+        <h3>Vidéos en caméra subjective</h3>
+        <p>Pour montrer l'envers du décor en cuisine, j'ai imaginé et monté une série de vidéos à partir de plans tournés en restaurant avec des lunettes Meta. J'ai aussi choisi les effets sonores.</p>
+        <p class="stat"><strong>4,7 millions de vues</strong><span>sur trois vidéos TikTok (1,4, 1,6 et 1,7 million), et 65 000 vues sur Snapchat</span></p>
+      </div>
+      <div class="strip">
+        <div class="phone"><video controls playsinline preload="none" poster="images/pov-journee-poster.jpg" aria-label="POV : la journée d'un équipier McDo"><source src="videos/pov-journee.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="images/pov-preparation-poster.jpg" aria-label="Préparation en cuisine, caméra subjective"><source src="videos/pov-preparation.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="images/pov-frites-poster.jpg" aria-label="Poste frites, caméra subjective"><source src="videos/pov-frites.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="images/affiches-poster.jpg" aria-label="Affiches produits McDonald's"><source src="videos/affiches.mp4" type="video/mp4"></video></div>
+      </div>
+    </div>
+
+    <!-- Analyse -->
+    <div class="block">
+      <div>
+        <h3>Analyse concurrentielle</h3>
+        <p>Pendant neuf semaines, j'ai suivi chaque semaine les contenus de KFC, Quick et Burger King : volume de posts, fréquence, meilleur post, vues, likes, commentaires et UGC relevés à la main. Chaque fiche se termine par mon analyse, « Dans l'œil de Léo ».</p>
+        <p>En parallèle, j'ai analysé quatre campagnes concurrentes de bout en bout, parfois sur plusieurs semaines, dont Crousty et Dragon Ball Z.</p>
+        <p>J'ai présenté ces analyses aux planneurs stratégiques de l'agence.</p>
+        <p>Dans cette vidéo, je décrypte une campagne réactive KitKat face caméra. Veille, analyse, écriture, voix et montage : elle réunit tout ce que j'ai fait pendant le stage, avec une dose d'humour.</p>
+      </div>
+      <div class="phone solo">
+        <video controls playsinline preload="none" poster="images/decryptage-kitkat-poster.jpg" aria-label="Décryptage face caméra d'une campagne réactive KitKat"><source src="videos/decryptage-kitkat.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+
+    <!-- Idées non publiées -->
+    <div class="block">
+      <div>
+        <h3>Brouillons d'idées</h3>
+        <p>Chaque semaine, je notais de nouvelles idées de contenus dans un carnet, « La Veilleuse ». Exemple de brouillon : les crânes de Ciryl Gane et Alex Pereira en pains de burger, avant leur combat.</p>
+      </div>
+      <figure>
+        <img class="shot draft" src="images/idee-ufc.jpg" width="1155" height="750" alt="Maquette : Big Mac contre Big Arch, pains de burger en forme de crânes" loading="lazy">
+        <figcaption>Brouillon, non publié.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="ecom" id="projets">
+  <div class="wrap">
+    <h2>Projets e-commerce</h2>
+    <p class="lede">Deux projets lancés pour tester en conditions réelles ce que j'apprenais en cours : créer un compte de zéro, trouver les bons formats, générer des vues sans budget.</p>
+
+    <div class="block single">
+      <div>
+        <h3>FingerLock sur TikTok Shop</h3>
+        <p>Avec mon associé, on a lancé FingerLock, des cadenas à empreinte digitale vendus uniquement sur TikTok Shop. On a trouvé les idées, tourné et monté nos vidéos nous-mêmes. J'y ai découvert et appliqué des techniques de hook.</p>
+        <p class="stat"><strong>250 000 vues en 5 jours</strong><span>sur 4 vidéos, dont une à 202 700, sans publicité</span></p>
+      </div>
+      <figure>
+        <img class="shot" src="images/fingerlock-tiktok.jpg" width="1600" height="458" alt="Grille des quatre vidéos TikTok FingerLock avec leurs vues" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="block">
+      <ul class="list-plain">
+        <li>
+          <h3>Nasozen</h3>
+          <p>Ma première boutique en ligne : un site Shopify pour découvrir le dropshipping. J'y ai travaillé la création du site et la stratégie e-commerce.</p>
+        </li>
+        <li>
+          <h3>Teen Gains</h3>
+          <p>Projet universitaire : un site WordPress de coaching sportif, avec articles optimisés pour le référencement et appels à l'action. <a href="https://teengains.com" target="_blank" rel="noopener">Voir le site</a></p>
+        </li>
+        <li>
+          <h3>Montage vidéo</h3>
+          <p>Je monte aussi des vidéos par plaisir, par exemple <a href="https://www.instagram.com/reel/DFvzaIzsPLz/" target="_blank" rel="noopener">ce montage</a> et <a href="https://www.instagram.com/reel/DB7Aug6smz2/" target="_blank" rel="noopener">celui-ci</a>, sur Instagram.</p>
+        </li>
+      </ul>
+      <figure>
+        <img class="shot" src="images/teen-gains.jpg" width="1400" height="625" alt="Page d'accueil du site Teen Gains" loading="lazy">
+        <figcaption>Teen Gains, page d'accueil.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Vous cherchez un alternant en communication digitale ?</h2>
+    <p class="lede">Écrivez-moi, je réponds rapidement.</p>
+    <p><a class="mail" href="mailto:leo.blondel68@gmail.com">leo.blondel68@gmail.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Léo Blondel</div>
+</footer>
+</body>
+</html>
