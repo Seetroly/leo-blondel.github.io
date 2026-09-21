@@ -43,6 +43,7 @@ p{margin:0 0 1em;max-width:36em}
 .results div{padding:1.1rem 1.25rem 0 0}
 .results div+div{padding-left:1.25rem;border-left:1px solid var(--line)}
 .results strong{display:block;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.results strong::before{content:"♥ ";color:var(--like);font-size:.7em;vertical-align:.12em}
 .results span{color:var(--muted);font-size:.95rem}
 
 /* Sections */
@@ -130,7 +131,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         <p class="stat"><strong>421 500 likes</strong><span>sur un seul commentaire</span></p>
       </div>
       <figure>
-        <img class="shot" src="images/commentaire-tiktok.jpg" width="827" height="800" alt="Commentaire de McDonald's France sous une vidéo TikTok, 421 500 likes" loading="lazy">
+        <img class="shot" src="commentaire-tiktok.jpg" width="827" height="800" alt="Commentaire de McDonald's France sous une vidéo TikTok, 421 500 likes" loading="lazy">
       </figure>
     </div>
 
@@ -141,19 +142,19 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
       </div>
       <div class="tweets">
         <figure>
-          <img class="shot" src="images/reactif-yamal.jpg" width="1000" height="997" alt="Post X de McDonald's France en réaction aux photos de Lamine Yamal" loading="lazy">
+          <img class="shot" src="reactif-yamal.jpg" width="1000" height="997" alt="Post X de McDonald's France en réaction aux photos de Lamine Yamal" loading="lazy">
           <figcaption>Lamine Yamal fête son titre de meilleur jeune sportif de l'année en jet privé, un McDo sur la table. Ma réponse dans la foulée : « force au livreur ».<strong class="num">278 000 vues</strong>sans publicité payante</figcaption>
         </figure>
         <figure>
-          <img class="shot" src="images/x-strasbourg.jpg" width="900" height="786" alt="Post X de McDonald's France : il a commandé une boîte de 4" loading="lazy">
+          <img class="shot" src="x-strasbourg.jpg" width="900" height="786" alt="Post X de McDonald's France : il a commandé une boîte de 4" loading="lazy">
           <figcaption>Le coach de Strasbourg fête la qualification au McDo avec les supporters. Ma réponse : « il a commandé une boîte de 4 ».<strong class="num">126 000 vues</strong>sur X</figcaption>
         </figure>
         <figure>
-          <img class="shot" src="images/x-ligue1.jpg" width="900" height="945" alt="Mème de McDonald's France pour les deux ans du partenariat Ligue 1" loading="lazy">
+          <img class="shot" src="x-ligue1.jpg" width="900" height="945" alt="Mème de McDonald's France pour les deux ans du partenariat Ligue 1" loading="lazy">
           <figcaption>Les deux ans du partenariat Ligue 1 McDonald's, en mème : « 2 ans qu'on se régale ».<strong class="num">31 000 vues</strong>sur X</figcaption>
         </figure>
         <figure>
-          <img class="shot" src="images/x-kitkat.jpg" width="900" height="905" alt="Post X de McDonald's France : il nous reste du KitKat, si jamais" loading="lazy">
+          <img class="shot" src="x-kitkat.jpg" width="900" height="905" alt="Post X de McDonald's France : il nous reste du KitKat, si jamais" loading="lazy">
           <figcaption>Le jour du vol d'un camion de KitKat : « il nous reste du KitKat, si jamais. » Post co-réalisé avec l'équipe.<strong class="num">294 000 vues</strong>et 9 000 likes sur X</figcaption>
         </figure>
       </div>
@@ -176,10 +177,10 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
       </div>
       <div class="cases">
         <div class="pair">
-          <img class="shot" src="images/insta-communique.jpg" width="800" height="998" alt="Carrousel Instagram, premier visuel : communiqué à propos d'un post supprimé" loading="lazy">
-          <img class="shot" src="images/insta-chaton.jpg" width="800" height="995" alt="Carrousel Instagram, second visuel : chaton en casquette McDonald's" loading="lazy">
+          <img class="shot" src="insta-communique.jpg" width="800" height="998" alt="Carrousel Instagram, premier visuel : communiqué à propos d'un post supprimé" loading="lazy">
+          <img class="shot" src="insta-chaton.jpg" width="800" height="995" alt="Carrousel Instagram, second visuel : chaton en casquette McDonald's" loading="lazy">
         </div>
-        <img class="shot fb" src="images/facebook-fete-des-peres.jpg" width="900" height="885" alt="Post Facebook « bonne fête papa » avec un pain de burger" loading="lazy">
+        <img class="shot fb" src="facebook-fete-des-peres.jpg" width="900" height="885" alt="Post Facebook « bonne fête papa » avec un pain de burger" loading="lazy">
       </div>
     </div>
 
@@ -191,10 +192,10 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         <p class="stat"><strong>4,7 millions de vues</strong><span>sur trois vidéos TikTok (1,4, 1,6 et 1,7 million), et 65 000 vues sur Snapchat</span></p>
       </div>
       <div class="strip">
-        <div class="phone"><video controls playsinline preload="none" poster="images/pov-journee-poster.jpg" aria-label="POV : la journée d'un équipier McDo"><source src="videos/pov-journee.mp4" type="video/mp4"></video></div>
-        <div class="phone"><video controls playsinline preload="none" poster="images/pov-preparation-poster.jpg" aria-label="Préparation en cuisine, caméra subjective"><source src="videos/pov-preparation.mp4" type="video/mp4"></video></div>
-        <div class="phone"><video controls playsinline preload="none" poster="images/pov-frites-poster.jpg" aria-label="Poste frites, caméra subjective"><source src="videos/pov-frites.mp4" type="video/mp4"></video></div>
-        <div class="phone"><video controls playsinline preload="none" poster="images/affiches-poster.jpg" aria-label="Affiches produits McDonald's"><source src="videos/affiches.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="pov-journee-poster.jpg" aria-label="POV : la journée d'un équipier McDo"><source src="pov-journee.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="pov-preparation-poster.jpg" aria-label="Préparation en cuisine, caméra subjective"><source src="pov-preparation.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="pov-frites-poster.jpg" aria-label="Poste frites, caméra subjective"><source src="pov-frites.mp4" type="video/mp4"></video></div>
+        <div class="phone"><video controls playsinline preload="none" poster="affiches-poster.jpg" aria-label="Affiches produits McDonald's"><source src="affiches.mp4" type="video/mp4"></video></div>
       </div>
     </div>
 
@@ -208,7 +209,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         <p>Dans cette vidéo, je décrypte une campagne réactive KitKat face caméra. Veille, analyse, écriture, voix et montage : elle réunit tout ce que j'ai fait pendant le stage, avec une dose d'humour.</p>
       </div>
       <div class="phone solo">
-        <video controls playsinline preload="none" poster="images/decryptage-kitkat-poster.jpg" aria-label="Décryptage face caméra d'une campagne réactive KitKat"><source src="videos/decryptage-kitkat.mp4" type="video/mp4"></video>
+        <video controls playsinline preload="none" poster="decryptage-kitkat-poster.jpg" aria-label="Décryptage face caméra d'une campagne réactive KitKat"><source src="decryptage-kitkat.mp4" type="video/mp4"></video>
       </div>
     </div>
 
@@ -219,7 +220,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         <p>Chaque semaine, je notais de nouvelles idées de contenus dans un carnet, « La Veilleuse ». Exemple de brouillon : les crânes de Ciryl Gane et Alex Pereira en pains de burger, avant leur combat.</p>
       </div>
       <figure>
-        <img class="shot draft" src="images/idee-ufc.jpg" width="1155" height="750" alt="Maquette : Big Mac contre Big Arch, pains de burger en forme de crânes" loading="lazy">
+        <img class="shot draft" src="idee-ufc.jpg" width="1155" height="750" alt="Maquette : Big Mac contre Big Arch, pains de burger en forme de crânes" loading="lazy">
         <figcaption>Brouillon, non publié.</figcaption>
       </figure>
     </div>
@@ -238,7 +239,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         <p class="stat"><strong>250 000 vues en 5 jours</strong><span>sur 4 vidéos, dont une à 202 700, sans publicité</span></p>
       </div>
       <figure>
-        <img class="shot" src="images/fingerlock-tiktok.jpg" width="1600" height="458" alt="Grille des quatre vidéos TikTok FingerLock avec leurs vues" loading="lazy">
+        <img class="shot" src="fingerlock-tiktok.jpg" width="1600" height="458" alt="Grille des quatre vidéos TikTok FingerLock avec leurs vues" loading="lazy">
       </figure>
     </div>
 
@@ -258,7 +259,7 @@ footer{padding:24px 0 40px;color:var(--muted);font-size:.9rem}
         </li>
       </ul>
       <figure>
-        <img class="shot" src="images/teen-gains.jpg" width="1400" height="625" alt="Page d'accueil du site Teen Gains" loading="lazy">
+        <img class="shot" src="teen-gains.jpg" width="1400" height="625" alt="Page d'accueil du site Teen Gains" loading="lazy">
         <figcaption>Teen Gains, page d'accueil.</figcaption>
       </figure>
     </div>
