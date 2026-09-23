@@ -114,7 +114,7 @@ figure{margin:0}
 /* Football: three tweets */
 .tweets-wrap{padding:clamp(56px,8vw,110px) 0;border-bottom:1px solid var(--line)}
 .tweets-wrap .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:end;margin-bottom:clamp(32px,5vw,56px)}
-.tweets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,28px);align-items:start}
+.tweets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:900px;gap:clamp(16px,2vw,28px);align-items:start}
 .tweet .stage{padding:clamp(18px,2.4vw,32px);border-radius:22px}
 .tweet p{font-size:.98rem;margin:1rem 0 0;color:#33363D}
 .tweet strong{display:block;font-stretch:68%;font-weight:800;font-size:2.4rem;line-height:1;color:var(--like);margin-top:.8rem}
@@ -237,6 +237,11 @@ figure{margin:0}
 .wide-photo img{object-position:75% 50%}
 .contact h2{overflow-wrap:break-word}
 
+.stage.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,28px);place-items:start}
+.stage.figures strong{display:block;font-stretch:65%;font-weight:800;font-size:clamp(3rem,6vw,5rem);line-height:.9;color:var(--ink)}
+.stage.figures span{color:var(--muted);font-size:.92rem;display:block;margin-top:.4rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.contact-actions{margin:2rem 0 0}
 </style>
 <title>Léo Blondel · Contenu et réseaux sociaux</title><meta name="description" content="Portfolio de Léo Blondel : contenu et réseaux sociaux.">
 </head><body>
@@ -248,7 +253,7 @@ figure{margin:0}
     <div class="hero-copy">
       <p class="hero-role">Contenu et réseaux sociaux</p>
       <p class="hero-pitch">Étudiant en BUT Techniques de commercialisation à Colmar, en recherche d'alternance. J'ai créé du contenu pour McDonald's France chez BBDO Paris et lancé deux boutiques en ligne.</p>
-      <a class="btn" href="mailto:leo.blondel68@gmail.com">M'écrire</a>
+      <div class="hero-actions"><a class="btn" href="mailto:leo.blondel68@gmail.com">M'écrire</a><a class="btn ghost" href="https://calendly.com/leo-blondel68/30min" target="_blank" rel="noopener">Réserver un appel</a></div>
     </div>
     <div class="hero-stats">
       <div><strong>421 500</strong><span>likes sur un commentaire de marque</span></div>
@@ -314,13 +319,8 @@ figure{margin:0}
         </figure>
         <figure class="tweet">
           <div class="stage cool"><img class="shot" src="x-strasbourg.jpg" width="900" height="786" alt="Post X de McDonald's France : il a commandé une boîte de 4" loading="lazy"></div>
-          <p>Le coach de Strasbourg fête la qualification au McDo. Ma réponse : « il a commandé une boîte de 4 ».</p>
+          <p>Strasbourg bat Mayence 4-0 et file en demi-finale de Ligue Conférence. Le soir même, son coach est photographié au McDo. Ma réponse : « il a commandé une boîte de 4 ».</p>
           <strong>126 000</strong><small>vues sur X</small>
-        </figure>
-        <figure class="tweet">
-          <div class="stage rose"><img class="shot" src="x-ligue1.jpg" width="900" height="945" alt="Mème de McDonald's France pour les deux ans du partenariat Ligue 1" loading="lazy"></div>
-          <p>Les deux ans du partenariat Ligue 1, en mème : « 2 ans qu'on se régale ».</p>
-          <strong>31 000</strong><small>vues sur X</small>
         </figure>
       </div>
     </div>
@@ -364,9 +364,21 @@ figure{margin:0}
         <h3>Neuf semaines de veille concurrentielle</h3>
         <p>Chaque semaine, j'ai suivi les contenus de KFC, Quick et Burger King : volume de posts, fréquence, meilleur post, vues, likes, commentaires et UGC relevés à la main. Chaque fiche se termine par mon analyse, « Dans l'œil de Léo ».</p>
         <p>J'ai aussi décrypté quatre campagnes concurrentes, dont la campagne Crousty de Burger King et la collaboration Dragon Ball Z de Quick, puis présenté ces analyses aux planneurs stratégiques de l'agence.</p>
-        <p>Dans cette vidéo, je décrypte face caméra la réponse de KitKat au vol de son camion : veille, analyse, écriture, voix et montage.</p>
       </div>
-      <div class="stage cool"><div class="phone solo"><video controls playsinline preload="none" poster="decryptage-kitkat-poster.jpg" aria-label="Décryptage face caméra d'une campagne réactive KitKat"><source src="decryptage-kitkat.mp4" type="video/mp4"></video></div></div>
+      <div class="stage cool figures">
+        <div><strong>9</strong><span>semaines de suivi</span></div>
+        <div><strong>3</strong><span>concurrents analysés</span></div>
+        <div><strong>4</strong><span>campagnes décryptées</span></div>
+      </div>
+    </article>
+
+    <article class="case flip" id="decryptage">
+      <div class="case-text">
+        <span class="tag">Vidéo</span>
+        <h3>Décrypter une campagne face caméra</h3>
+        <p>KitKat s'est fait voler un camion et a répondu publiquement. J'ai analysé cette réaction dans une vidéo : choix du sujet, écriture, passage devant la caméra, voix et montage.</p>
+      </div>
+      <div class="stage"><div class="phone solo"><video controls playsinline preload="none" poster="decryptage-kitkat-poster.jpg" aria-label="Décryptage face caméra d'une campagne réactive KitKat"><source src="decryptage-kitkat.mp4" type="video/mp4"></video></div></div>
     </article>
 
     <article class="case flip" id="brouillons">
@@ -435,6 +447,7 @@ figure{margin:0}
     <h2>Vous cherchez un alternant en communication digitale ?</h2>
     <p class="lede">Écrivez-moi, je réponds rapidement.</p>
     <a class="mail" href="mailto:leo.blondel68@gmail.com">leo.blondel68@gmail.com</a>
+    <p class="contact-actions"><a class="btn ghost" href="https://calendly.com/leo-blondel68/30min" target="_blank" rel="noopener">Réserver un appel</a></p>
     <div class="foot"><span>© 2026 Léo Blondel</span><span><a href="index.html">Accueil</a>&nbsp;&nbsp;&nbsp;<a href="realisations.html">Réalisations</a>&nbsp;&nbsp;&nbsp;<a href="a-propos.html">À propos</a></span></div>
   </div>
 </section>
